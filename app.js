@@ -8,7 +8,10 @@ let bodyParser = require('body-parser');
 let index = require('./routes/index');
 //let users = require('./routes/users');
 let mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/detail');
+mongoose.connect("mongodb+srv://admin-mike:9NMCTko4NoWXtfcw@cluster0.ewevp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+{ useNewUrlParser: true,
+useUnifiedTopology: true 
+},);
 
 let app = express();
 
